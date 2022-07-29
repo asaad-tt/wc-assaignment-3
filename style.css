@@ -7,9 +7,9 @@
 body{
     font-family: 'Poppins', sans-serif;
 }
-img{
+/* img{
     max-width: 100%;
-}
+} */
 
 /* carousel section  */
 .slider-item {
@@ -17,6 +17,7 @@ img{
     min-height: 300px;
     background: no-repeat scroll center scroll;
     background-size: cover;
+    position: relative;
 }
 .slider-item::before{
     content: "";
@@ -31,6 +32,10 @@ img{
 }
 .slider-caption{
     bottom: 200px;
+}
+
+.course_para{
+    font-size: .9rem;
 }
 
 /* register section  */
@@ -60,4 +65,10 @@ img{
     width: 40px;
     line-height: 40px;
     border-radius: 50%;
-    margin-left: 5px;
+    margin-left: 5px;}
+
+@media screen and (max-width: 576px) {
+    .course_image{
+        flex-direction: column;
+    }
+}
